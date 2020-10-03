@@ -4,7 +4,10 @@ $gray-medium-light: #eaeaea;
 
 body {
     padding-top: 60px;
-    background-color: rgb(118, 186, 190);
+    background: rgb(24,181,170);
+    background: radial-gradient(circle, rgba(24,181,170,0.9877488514548239) 7%, rgba(14,223,212,1) 50%, rgba(6,188,224,1) 78%);
+    // rgb(118, 186, 190);
+    
 }
 
 section {

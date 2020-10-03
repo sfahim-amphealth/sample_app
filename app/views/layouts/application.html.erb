@@ -11,6 +11,7 @@
   <%= render 'layouts/header'%>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
+        
         <%= link_to "sample app", '#', id: "logo"%>
         <nav>
           <ul class ="nav navbar-nav navbar-right">
@@ -22,6 +23,10 @@
       </div>
     </header>
     <div class="container">
+      <% flash.each do |msg_type, msg| %>
+          <%= content_tag :div, msg, class: "alert alert-#{msg_type}"%>
+          
+      <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
