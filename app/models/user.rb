@@ -77,6 +77,8 @@ class User < ApplicationRecord
         reset_sent_at < 2.hours.ago # password reset sent earlier than two hours ago ?
     end
 
+    # defines a proto-feed 
+    # 
     private
 
         # converts email to all lowercase
